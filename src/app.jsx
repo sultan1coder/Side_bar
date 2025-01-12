@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -9,17 +9,20 @@ import Contact from './pages/Contact';
 import Admin from './pages/admin';
 import Users from './pages/users';
 import Dashboard from './pages/dashboard';
-// import Sideroute from './pages/sideroute';
 
 
 
 const App = () => {
+    const [isOpen, setIsOpen] = useState(false);
+    const handleClick = () => {
+        setIsOpen(s => !s);
+    }
     return (
         <Router>
             <div className="flex flex-col min-h-screen">
-                <Header />
+                <Header onSideToggle={handleClick} />
                 <div className="flex flex-grow">
-                <Sidebar />
+                    <Sidebar isOpen={isOpen} />
                     <main className="container flex-grow p-4 mx-auto">
                         <Routes>
                             <Route path="/" element={<Home />} />
@@ -28,7 +31,6 @@ const App = () => {
                             <Route path="/admin" element={<Admin />} />
                             <Route path="/users" element={<Users />} />
                             <Route path="/dashboard" element={<Dashboard />} />
-                            {/* <Route path='/sideroute' element={<Sideroute/>} */}
                         </Routes>
                     </main>
                 </div>
