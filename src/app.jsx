@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Header from './components/Header';
+import Header from './components/header';
 import Footer from './components/Footer';
 import Sidebar from './components/Sidebar';
 import Home from './pages/home';
 import About from './pages/About';
-import Contact from './pages/Contact';
+import Contact from './pages/contact';
 import Admin from './pages/admin';
 import Users from './pages/users';
 import Dashboard from './pages/dashboard';
