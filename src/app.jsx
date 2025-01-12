@@ -14,9 +14,12 @@ import Dashboard from './pages/dashboard';
 
 const App = () => {
     const [isOpen, setIsOpen] = useState(false);
-    const handleClick = () => {
+    const handleClick = (value = undefined) => {
+        //added
+        if(typeof value == 'boolean')setIsOpen(value);
+        //added
         setIsOpen(s => !s);
-    }
+        }
     return (
         <Router>
             <div className="flex flex-col min-h-screen">

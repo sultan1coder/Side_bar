@@ -6,7 +6,6 @@ const Home = () => {
     <section class="text-center py-12">
         <h2 class="text-4xl font-bold mb-4">Welcome to Tiigsi Technology</h2>
         <p class="text-gray-700 text-lg">tiigsi platform is the best platform of e-learning platforms</p>
-        <a href="#" class="mt-6 inline-block bg-green-600 text-white px-6 py-3 rounded shadow hover:bg-green-700">Learn More</a>
     </section>
 
     <section class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">

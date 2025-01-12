@@ -13,9 +13,9 @@ const Header = (props) => {
         <img src="https://tiigsi.com/assets/img/brand/logo.png" alt="" className='w-20 text-white' />
         <nav>
           <ul className="flex space-x-4 text-lg font-semibold">
-            <li><Link to="/" className="hover:underline-none ">Home</Link></li>
-            <li><Link to="/about" className="hover:underline-none">About</Link></li>
-            <li><Link to="/contact" className="hover:underline-none">Contact</Link></li>
+            <li onClick={()=> props.onSideToggle(true)}><Link to="/" className="hover:underline-none ">Home</Link></li>
+            <li onClick={()=> props.onSideToggle(true)}><Link to="/about" className="hover:underline-none">About</Link></li>
+            <li onClick={()=> props.onSideToggle(true)}><Link to="/contact" className="hover:underline-none">Contact</Link></li>
           </ul>
         </nav>
       </div>
