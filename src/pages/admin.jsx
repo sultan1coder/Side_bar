@@ -12,7 +12,7 @@ function admin() {
             type="email"
             id="email"
             name="email"
-            class="w-52 px-3 py-2 text-gray-700 border rounded-lg focus:outline-none focus:ring focus:ring-blue-300"
+            class="w-52 px-3 py-2 text-gray-700 border rounded-lg focus:outline-none focus:ring focus:ring-green-300"
             placeholder="Enter email"
             required></input>
         </div>
